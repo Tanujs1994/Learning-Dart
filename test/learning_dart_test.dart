@@ -1,4 +1,4 @@
-import 'package:learning_dart/learning_dart.dart';
+import 'package:learning_dart/main.dart';
 import 'package:test/test.dart';
 
 void main() {
