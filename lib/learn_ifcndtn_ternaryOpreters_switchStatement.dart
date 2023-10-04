@@ -26,7 +26,40 @@ void main() {
   }
 }*/
 
+// bool isAllowed = false;
+
 void main() {
+  // isAllowed = !isAllowed;
+  // !isAllowed -> false
+  // int age = 20;
+  String someVAlue = 'hi!';
+  if (someVAlue.endsWith('!')) {
+    print('wow');
+  } else {
+    print('naha');
+  }
+
+  //Ternary
+
+  String value = (someVAlue.startsWith('h') ? 'woww' : 'naha');
+  print(value);
+
+  int age = 20;
+
+  //Switch Statement
+
+  switch (someVAlue) {
+    case "hi!" when age < 20:
+      print('kkk');
+    case "hi!!":
+    case "hi!!!":
+    default:
+      print('yooo');
+  }
+  f();
+}
+
+void f() {
   String destinationZone = 'PQR';
   double weightInKgs = 4.5;
   double cost = 0;
