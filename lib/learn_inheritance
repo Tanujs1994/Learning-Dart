@@ -1,0 +1,36 @@
+void main() {
+  //Inheritance
+  //Object Oriented Programming (OOP)
+
+  final car = Car();
+
+  print(car.accelerate());
+
+  print(car.speed);
+}
+
+class SomeClass {
+  int speed = 15;
+
+  void accelerate() {
+    speed += 30;
+  }
+}
+
+class Vehicle extends SomeClass {
+  bool isEngineWorking = false;
+  bool isLightOn = true;
+  @override //override jisme hoga wo phle read krega//
+  int accelerate() {
+    speed += 10;
+    return speed;
+  }
+}
+
+class Car extends Vehicle {
+  int noOfWheels = 4;
+}
+
+class Truck extends Vehicle {
+  int noOfWheels = 8;
+}
